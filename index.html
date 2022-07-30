@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="login">
+      <label for="email">
+        Email
+      </label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="Enter the Email">
+      <br>
+      <label for="password">
+        Password
+      </label>
+      <br>
+      <input type="password" name="password" id="password" placeholder="Enter Pass">
+      <br>
+      <br>
+      <button type="submit">
+        Login
+      </button>
+    </form>
+    <!-- <script type="text" src="renderer.js"></script> -->
+    <script>
+      login.addEventListener("submit", async (event) => {
+
+        const email = document.getElementById("email")
+        const password = document.getElementById("password")
+        if(password){
+          alert('Login Successfully');
+        }
+        else{
+          alert('Login faild');
+        }
+      })
+    </script>
+  </body>
+</html>
